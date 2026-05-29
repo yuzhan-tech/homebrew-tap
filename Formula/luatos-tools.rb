@@ -1,22 +1,22 @@
 class LuatosTools < Formula
   desc "Rust CLI for LuatOS firmware packaging, flashing, and serial monitoring"
   homepage "https://github.com/yuzhan-tech/luatos-tools"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.1.0/luatos-tools-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "230feaff1c7e3512f865b14506c66514970d4ecff0be6812e9e0c6f7d7031366"
+      url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.2.0/luatos-tools-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c82498f255bde88e7945ddf063798dc2b1de1dc486c6251475891332d3691e65"
     else
-      url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.1.0/luatos-tools-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "f71b70a1338757b2b5c81d1ed9c6911c53752325ebd01d68c554678fe0ffe4fa"
+      url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.2.0/luatos-tools-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "278100ea14a9c1256ea6894b1b25c0c535b1aea0e9de17f8a67ab33a2d8ed7ae"
     end
   end
 
   on_linux do
-    url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.1.0/luatos-tools-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "f91fcb65c0e3b2f69adf8b91f0f14e19e7d952911371144f69706289d50b125d"
+    url "https://github.com/yuzhan-tech/luatos-tools/releases/download/v0.2.0/luatos-tools-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "826296beec82719519d377c1508d15c365f8ba3c6f79090778463595bf0dbd4c"
   end
 
   def install
